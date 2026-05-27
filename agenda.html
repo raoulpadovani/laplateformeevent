@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laplateforme Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/agenda.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="asset/logo/event.jpg" alt="Logo Laplateforme Events" class="logo-img">
+          <span>LAPLATEFORME<br><small>EVENTS</small></span>
+        </div>
+        <nav class="nav" id="navMenu">
+          <a href="index.html">ACCUEIL</a>
+          <a href="agenda.html">AGENDA</a>
+          <a href="index.html#telechargements">TÉLÉCHARGEMENTS</a>
+          <a href="https://www.instagram.com/laplateforme_events/" class="nav-social" title="Instagram">INSTAGRAM</a>
+          <a href="#" class="nav-contact" onclick="openContactModal(event)">NOUS CONTACTER</a>
+        </nav>
+        <div class="header-right">
+          <a href="https://www.instagram.com/laplateforme_events/" class="social-icon" title="Instagram"><img src="asset/logo/insta.png" alt="Instagram" height="30"></a>
+          <a href="#" class="btn-contact" onclick="openContactModal(event)">NOUS CONTACTER</a>
+        </div>
+        <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MODAL CONTACT -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeContactModal()">&times;</span>
+        <h2>NOUS CONTACTER</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>📞 Téléphone</h3>
+            <a href="tel:+33612345678">+33 (0)6 12 34 56 78</a>
+          </div>
+          <div class="contact-item">
+            <h3>✉️ Email</h3>
+            <a href="mailto:padovaniraoul@gmail.com">padovaniraoul@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="agenda-section" id="agenda">
+        <h2>NOS ÉVÉNEMENTS</h2>
+        
+        <div class="user-info" id="userInfo" style="display: none;">
+            Connecté en tant que : <span id="userName"></span>
+            <button onclick="logout()">Se déconnecter</button>
+        </div>
+
+        <div class="login-container" id="loginContainer" style="display: none;">
+            <p>👋 Connectez-vous avec votre compte Google pour voir VOS événements personnels</p>
+            <button id="googleSignInBtn" class="btn-reserver" style="display: block; margin: 20px auto;">🔐 Se connecter avec Google</button>
+            <div id="google-login-btn"></div>
+        </div>
+        
+        <div class="events-grid" id="eventsContainer" style="display: none;">
+            <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">
+                ⏳ Chargement des événements...
+            </div>
+        </div>
+
+        <button class="btn-view-calendar" id="toggleBtn" style="display: none;">📅 AFFICHER TOUT LE CALENDRIER</button>
+
+        <div class="calendar-container" id="calendarContainer">
+            <iframe src="https://calendar.google.com/calendar/embed?src=padovaniraoul%40gmail.com&ctz=Europe%2FParis" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>LAPLATEFORME EVENTS</h4>
+        </div>
+        
+        <div class="footer-section">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="agenda.html">AGENDA</a></li>
+            <li><a href="index.html#telechargements">TÉLÉCHARGEMENTS</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="tel:+33612345678">📞 +33 (0)6 12 34 56 78</a></li>
+            <li><a href="mailto:padovaniraoul@gmail.com">✉️ padovaniraoul@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section footer-social">
+          <h4>NOUS SUIVRE</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/laplateforme_events/" class="social-link" title="Instagram">
+              <img src="asset/logo/insta.png" alt="Instagram" height="24">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/agenda.js"></script>
+</body>
+</html>

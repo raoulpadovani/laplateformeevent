@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laplateforme_events</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-container">
+    <div class="logo">
+      <img src="asset/logo/event.jpg" alt="Logo Laplateforme Events" class="logo-img">
+      <span>LAPLATEFORME<br><small>EVENTS</small></span>
+    </div>
+    <nav class="nav" id="navMenu">
+      <a href="#accueil">ACCUEIL</a>
+      <a href="agenda.html">AGENDA</a>
+      <a href="#telechargements">TÉLÉCHARGEMENTS</a>
+      <a href="https://www.instagram.com/laplateforme_events/" class="nav-social" title="Instagram">INSTAGRAM</a>
+      <a href="#" class="nav-contact" onclick="openContactModal(event)">NOUS CONTACTER</a>
+    </nav>
+    <div class="header-right">
+      <a href="https://www.instagram.com/laplateforme_events/" class="social-icon" title="Instagram"><img src="asset/logo/insta.png" alt="Instagram" height="30"></a>
+      <a href="#" class="btn-contact" onclick="openContactModal(event)">NOUS CONTACTER</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<section id="accueil" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-bg" style="background-image: url('asset/image/fond.png')"></div>
+  <div class="hero-content">
+    <p class="hero-tag">VOS ÉVÉNEMENTS, NOTRE PASSION.</p>
+    <h1>LAPLATEFORME<br>EVENTS</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-description">Des expériences uniques, des ambiances inoubliables, des souvenirs qui restent.</p>
+    <a href="agenda.html" class="btn-primary">DÉCOUVRIR L'AGENDA →</a>
+  </div>
+</section>
+
+<section class="derniers-evenements">
+  <div class="section-header">
+    <h2>DERNIERS ÉVÉNEMENTS</h2>
+    
+  </div>
+  <div class="gallery-grid">
+    <img src="asset/image/event (1).png" alt="Event 1">
+    <img src="asset/image/event (3).png" alt="Event 2">
+    <img src="asset/image/event (2).png" alt="Event 3">
+    <img src="asset/image/event (4).png" alt="Event 4">
+    <img src="asset/image/event (1).jpg" alt="Event 5">
+    <img src="asset/image/event (3).jpg" alt="Event 6">
+  </div>
+</section>
+
+<section id="agenda" class="agenda">
+  <div class="section-header">
+    <h2>AGENDA</h2>
+    <a href="agenda.html" class="view-all">VOIR TOUS LES ÉVÉNEMENTS </a>
+  </div>
+  
+  <div class="events-grid" id="eventsContainer">
+    <div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #888;">
+      ⏳ Chargement des événements...
+    </div>
+  </div>
+</section>
+
+<section id="telechargements" class="telechargements">
+  <h2>TÉLÉCHARGEMENTS</h2>
+  <p class="telechargements-subtitle">Retrouvez nos plaquettes et découvrez l'univers Hello BG.</p>
+  
+  <div class="download-grid">
+    <div class="download-card">
+      <div class="pdf-icon">📄</div>
+      <h3>PLAQUETTE<br>CORPORATE</h3>
+      <p>Télécharger le PDF</p>
+      <a href="corporate.pdf" download class="download-btn">⬇️</a>
+    </div>
+
+    <div class="download-card">
+      <div class="pdf-icon">📄</div>
+      <h3>PLAQUETTE<br>EVENT</h3>
+      <p>Télécharger le PDF</p>
+      <a href="event.pdf" download class="download-btn">⬇️</a>
+    </div>
+  </div>
+</section><br> <br>
+
+<!-- MODAL CONTACT -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeContactModal()">&times;</span>
+    <h2>NOUS CONTACTER</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>📞 Téléphone</h3>
+        <a href="tel:+33612345678">+33 (0)6 12 34 56 78</a>
+      </div>
+      <div class="contact-item">
+        <h3>✉️ Email</h3>
+        <a href="mailto:padovaniraoul@gmail.com">padovaniraoul@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>LAPLATEFORME EVENTS</h4>
+    </div>
+    
+    <div class="footer-section">
+      <h4>NAVIGATION</h4>
+      <ul>
+        <li><a href="#accueil">ACCUEIL</a></li>
+        <li><a href="agenda.html">AGENDA</a></li>
+        <li><a href="#telechargements">TÉLÉCHARGEMENTS</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>CONTACT</h4>
+      <ul>
+        <li><a href="tel:+33612345678">📞 +33 (0)6 12 34 56 78</a></li>
+        <li><a href="mailto:padovaniraoul@gmail.com">✉️ padovaniraoul@gmail.com</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section footer-social">
+      <h4>NOUS SUIVRE</h4>
+      <div class="social-links">
+        <a href="https://www.instagram.com/laplateforme_events/" class="social-link" title="Instagram">
+          <img src="asset/logo/insta.png" alt="Instagram" height="24">
+        </a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>
