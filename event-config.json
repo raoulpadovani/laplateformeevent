@@ -1,9 +1,0 @@
-{
-  "events": [
-    {
-      "title": "Nom de votre événement",
-      "image": "https://via.placeholder.com/400x250?text=Votre+Image",
-      "detailLink": "https://votrelien.com"
-    }
-  ]
-}

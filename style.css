@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.hero-bg {
+  background-image: url('asset/image/hero.png');
+}
 
 @keyframes fadeInUp {
   from {

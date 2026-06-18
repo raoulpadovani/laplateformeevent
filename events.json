@@ -1,0 +1,68 @@
+[
+    {
+        "title": "vibz",
+        "date": "2026-06-06",
+        "time": "14:03",
+        "location": "laplateforme",
+        "description": "",
+        "ticketLink": "",
+        "price": "30",
+        "image": "asset\/galerie\/event_6a22c810da5ad_lapltfrm-rock © Stephane Nawrat-37.jpg",
+        "id": 1
+    },
+    {
+        "title": "sqdsq",
+        "date": "2026-06-11",
+        "time": "15:09",
+        "location": "dsdqs",
+        "description": "",
+        "ticketLink": "",
+        "price": "ddq",
+        "image": "asset\/galerie\/event_6a22ca3131b63.jpg",
+        "id": 2
+    },
+    {
+        "title": "vibz",
+        "date": "2026-06-14",
+        "time": "15:11",
+        "location": "laplateforme",
+        "description": "",
+        "ticketLink": "https:\/\/shotgun.live\/fr\/festivals\/brunch-electronik-paris-2026",
+        "price": "30 $",
+        "image": "asset\/galerie\/event_6a22cb085e755.jpg",
+        "id": 3
+    },
+    {
+        "title": "pdfkokeo",
+        "date": "2026-06-18",
+        "time": "15:24",
+        "location": "laplateforme",
+        "description": "",
+        "ticketLink": "https:\/\/shotgun.live\/fr\/events\/peggy-gou-at-palais-royal",
+        "price": "gratuit",
+        "image": "asset\/galerie\/event_6a22cd7e27ea3.jpg",
+        "id": 4
+    },
+    {
+        "title": "badboy",
+        "date": "2026-06-28",
+        "time": "15:53",
+        "location": "laplateforme",
+        "description": "soiree teckno ",
+        "ticketLink": "https:\/\/shotgun.live\/fr\/events\/peggy-gou-at-palais-royal",
+        "price": "gratuit",
+        "image": "asset\/galerie\/event_6a22d4f7b7e3e.jpg",
+        "id": 5
+    },
+    {
+        "title": "goodboy",
+        "date": "2026-06-20",
+        "time": "15:40",
+        "location": "marseille",
+        "description": "",
+        "ticketLink": "",
+        "price": "90",
+        "image": "asset\/galerie\/event_6a33f468e20f8.png",
+        "id": 6
+    }
+]
